@@ -1,6 +1,14 @@
 import './index.css'
+import TodoList from './components/TodoList';
+import SearchPanel from './components/SearchPanel';
+import AppHeader from './components/AppHeader';
+
 export default function App() {
     return (
-        <h1>Hello todoList</h1>
+        <div>
+            <AppHeader />
+            <SearchPanel />
+            <TodoList />
+        </div>
     );
 }
