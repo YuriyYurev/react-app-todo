@@ -1,8 +1,8 @@
 import './App.css'
-import TodoList from './components/TodoList';
-import SearchPanel from './components/SearchPanel';
-import AppHeader from './components/AppHeader';
-import ItemStatusFilter from './components/ItemStatusFilter';
+import TodoList from '../TodoList';
+import SearchPanel from '../SearchPanel';
+import AppHeader from '../AppHeader';
+import ItemStatusFilter from '../ItemStatusFilter';
 
 export default function App() {
     const todoData = [
