@@ -1,13 +1,17 @@
-export default function TodoList() {
-    const list = [
-        {name: 'item 1', id: '1'}, 
-        {name: 'item 2', id: '2'}, 
-        {name: 'item 3', id: '3'}, 
+import TodoListItem from "./TodoListItem";
+import './TodoList.css'
 
-    ];
+export default function TodoList({ todos }) {
+
+    const elements = todos.map(item => {
+        const { id, ...itemProps } = item;
+
+        return <li key={id} className="list-group-item"><TodoListItem {...itemProps} /></li>;
+    });
+
     return (
-        <ul>
-            {list.map(listItem =><li key={listItem.id}>{listItem.name}</li>)}
+        <ul className="list-group todo-list">
+            {elements}
         </ul>
-    )
-}
+    );
+};

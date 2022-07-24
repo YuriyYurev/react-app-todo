@@ -1,0 +1,14 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+.todo-app {
+    margin: 3rem auto 0 auto;
+    max-width: 800px;
+    width: 95%;
+}
+
+.top-panel {
+    margin: 1rem 0;
+}
